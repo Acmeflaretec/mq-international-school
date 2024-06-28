@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const SectionTwo = () => {
@@ -26,8 +27,8 @@ const SectionTwo = () => {
             </div> */}
          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images?.map(item => (
-               <div>
-                  <img className="h-auto max-w-full rounded-lg" src={`/images/gallery/${item}`} alt="" />
+               <div key={item}>
+                  <Image className="h-auto max-w-full rounded-lg" width={400} height={300} src={`/images/gallery/${item}`} alt={item} />
                </div>
             ))}
          </div>

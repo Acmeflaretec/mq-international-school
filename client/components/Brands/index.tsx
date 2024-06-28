@@ -51,18 +51,18 @@ const Brands = () => {
             height={500}
             />
               <b>MQ Anthem</b><br/>
-              "You are mercy, Grant me growth<br />
+              You are mercy, Grant me growth<br />
               Your presence, Unique Potential Of Me<br />
               Endless Ocean Bestow knowledge Upon me<br />
               My invaluable treasure is My Education<br />
               I aspire to conquer the world<br />
               I believe my wisdom will create wonders<br />
-              Today's learning is my Asset for tomorrow<br />
+              Today&apos;s learning is my Asset for tomorrow<br />
               My vow is sworn and steadfast<br />
-              I will attain all of MQ's Knowledge<br />
+              I will attain all of MQ&apos;s Knowledge<br />
               I pledge my devotion with faith in my strength and abilities<br />
               I shall achieve everything through you<br />
-              God, may your divine mercy enhance my knowledge."<br />
+              God, may your divine mercy enhance my knowledge.<br />
               {/* {brandsData.map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
               ))} */}
