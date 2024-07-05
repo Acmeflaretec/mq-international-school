@@ -21,7 +21,7 @@ const AboutSectionOne = () => {
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="-mx-auto flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Why Us"
@@ -51,18 +51,66 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div
-                className="flex items-center wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="flex items-center wow fadeInUp relative aspect-[25/24] max-w-[500px] lg:mr-0"
                 data-wow-delay=".2s"
               >
+
                 <Image
-                  src="/images/about/about-image.jpg"
+                  src="/images/hero/butter.gif"
                   alt="about-image"
                   objectFit="cover"
-                  width={500}
-                  height={500}
-                  className="rounded-lg"
+                  width={70}
+                  height={70}
+                  className="rounded-lg absolute mt-96 md:ml-20 lg:ml-0 xl:ml-20 md:z-10 "
+                  // className="mx-auto max-w-full lg:mr-0"
+                  />
+                <Image
+                  src="/images/gallery/AJI_4208.jpg"
+                  alt="about-image"
+                  objectFit="cover"
+                  width={350}
+                  height={350}
+                  className="rounded-lg absolute mb-32 md:mb-0 md:mt-96 md:ml-40 lg:ml-20 xl:ml-40 md:w-[30vh] lg:w-[30vh] border-white border-spacing-10 border"
+                  // className="mx-auto max-w-full lg:mr-0"
+                  />
+                <Image
+                  src="/images/gallery/AJI_3868.jpg"
+                  alt="about-image"
+                  objectFit="cover"
+                  width={350}
+                  height={350}
+                  className="rounded-lg absolute md:ml-72 lg:ml-40 xl:ml-72 border-white border-spacing-3 border hidden md:block"
+                  // className="mx-auto max-w-full lg:mr-0"
+                  />
+                <Image
+                  src="/images/gallery/AJI_3854.jpg"
+                  alt="about-image"
+                  objectFit="cover"
+                  width={350}
+                  height={350}
+                  className="rounded-lg absolute md:mb-80 lg:mb-96  border-white border-spacing-10 border hidden md:block"
                   // className="mx-auto max-w-full lg:mr-0"
                 />
+                <div className="flex flex-row mt-56 md:hidden">
+                <Image
+                  src="/images/gallery/AJI_3854.jpg"
+                  alt="about-image"
+                  objectFit="cover"
+                  width={50}
+                  height={50}
+                  className="rounded-lg border-white border-spacing-3 border w-[50vw] "
+                  // className="mx-auto max-w-full lg:mr-0"
+                />
+                <Image
+                  src="/images/gallery/AJI_3868.jpg"
+                  alt="about-image"
+                  objectFit="cover"
+                  width={50}
+                  height={50}
+                  className="rounded-lg  border-white border-spacing-10 border w-[50vw]"
+                  // className="mx-auto max-w-full lg:mr-0"
+                />
+                </div>
               </div>
             </div>
           </div>

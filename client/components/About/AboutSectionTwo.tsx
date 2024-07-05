@@ -4,19 +4,68 @@ const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-12">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
+        <div className="-mx-auto flex flex-wrap items-center">
           <div className=" w-full px-4 lg:w-1/2 order-2 md:order-1">
             <div
-              className="flex wow fadeInUp relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center items-center lg:m-0"
-              data-wow-delay=".15s"
+              className="flex items-center relative aspect-[1/1] max-w-[500px] lg:mr-0"
+              data-wow-delay=".2s"
             >
               <Image
-                src="/images/about/about-image-2.jpg"
-                alt="about image"
-                width={500}
-                height={500}
-                className="rounded-lg"
+                src="/images/hero/butter.gif"
+                alt="about-image"
+                objectFit="cover"
+                width={70}
+                height={70}
+                className="rounded-lg absolute mt-96 md:ml-20 lg:ml-0 md:z-10 "
+              // className="mx-auto max-w-full lg:mr-0"
               />
+              <Image
+                src="/images/about/about-image.jpg"
+                alt="about-image"
+                objectFit="cover"
+                width={350}
+                height={350}
+                className="rounded-lg absolute mb-32 md:mb-24 md:mt-96 md:ml-40 lg:ml-16 border-white border-spacing-10 border"
+              // className="mx-auto max-w-full lg:mr-0"
+              />
+              <Image
+                src="/images/about/about-image-2.jpg"
+                alt="about-image"
+                objectFit="cover"
+                width={350}
+                height={350}
+                className="rounded-lg absolute md:ml-72 lg:ml-28 xl:ml-52 border-white border-spacing-3 border hidden md:block"
+              // className="mx-auto max-w-full lg:mr-0"
+              />
+              <Image
+                src="/images/gallery/AJI_3786.jpg"
+                alt="about-image"
+                objectFit="cover"
+                width={350}
+                height={350}
+                className="rounded-lg absolute md:mb-80 lg:mb-96 border-white border-spacing-10 border hidden md:block"
+              // className="mx-auto max-w-full lg:mr-0"
+              />
+              <div className="flex flex-row mt-56 md:hidden">
+                <Image
+                  src="/images/about/about-image-2.jpg"
+                  alt="about-image"
+                  // objectFit="cover"
+                  width={50}
+                  height={50}
+                  className="rounded-lg border-white border-spacing-3 border w-[50vw] "
+                // className="mx-auto max-w-full lg:mr-0"
+                />
+                <Image
+                  src="/images/gallery/AJI_3786.jpg"
+                  alt="about-image"
+                  // objectFit="cover"
+                  width={50}
+                  height={50}
+                  className="rounded-lg border-white border-spacing-10 border w-[50vw]"
+                // className="mx-auto max-w-full lg:mr-0"
+                />
+              </div>
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 order-1 md:order-2">

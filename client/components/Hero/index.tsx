@@ -9,24 +9,33 @@ const Hero = () => {
         // style={{ backgroundImage: "url('/images/hero/hero-bg.jpg')" }}
         className="relative z-10 overflow-hidden min-h-[90vh] flex items-center"
       >
-        <div className="w-full h-full bg-opacity-50 pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[110px] 2xl:pb-[200px]" >
-        <div className="container h-full" >
-          <div className="-mx-4 flex flex-wrap h-full">
-            <div className="flex items-center w-full h-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
-              >
-                <Image alt="logo" width={700} height={500} src="/logo.png"/>
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                MQ International Schooling
-                </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:opacity-90 sm:text-lg md:text-xl">
-                &quot;The MQ International Schooling Method emphasizes modern physical education along with traditional moral education concepts.&quot;                </p>
+        <Image
+          src="/images/hero/branch.gif"
+          alt="about-image"
+          objectFit="cover"
+          width={350}
+          height={350}
+          className="rounded-lg absolute mb-96 z-10"
+        // className="mx-auto max-w-full lg:mr-0"
+        />
+        <div className="w-full h-full bg-opacity-50 pt-[200px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[110px] 2xl:pb-[200px]" >
+          <div className="container h-full" >
+            <div className="-mx-4 flex flex-wrap h-full">
+              <div className="flex items-center w-full h-full px-4">
+                <div
+                  className="wow fadeInUp mx-auto max-w-[800px] text-center"
+                  data-wow-delay=".2s"
+                >
+                  <Image alt="logo" width={700} height={500} src="/logo.png" />
+                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                    MQ International Schooling
+                  </h1>
+                  <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:opacity-90 sm:text-lg md:text-xl">
+                    &quot;The MQ International Schooling Method emphasizes modern physical education along with traditional moral education concepts.&quot;                </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
         {/* <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg

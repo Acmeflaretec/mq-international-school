@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-      <NextThemesProvider attribute="class" defaultTheme="light">
+      <NextThemesProvider attribute="class" forcedTheme="light">
           <Header />
           {children}
           <Footer />

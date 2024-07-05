@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Advanced Tech Training",
     paragraph:
-    "Experience cutting-edge education with AI Robotics Training and Basics of Coding. Our programs prepare students for the future by introducing them to the latest technological advancements.",
+    "Experience cutting-edge education with AI Robotics Training and the Basics of Coding. Our programs prepare students for the future by introducing them to the latest technological advancements.",
   },
   {
     id: 1,
@@ -89,7 +89,7 @@ const featuresData: Feature[] = [
     ),
     title: "Expansion Plans",
     paragraph:
-      "We are committed to broadening our reach with plans to open additional outlets throughout India. Our goal is to bring our unique blend of education to more communities nationwide",
+      "We are committed to broadening our reach by opening additional outlets throughout India. Our goal is to bring our unique blend of education to more communities nationwide.",
   },
 ];
 export default featuresData;
