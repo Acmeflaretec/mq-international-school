@@ -1,24 +1,24 @@
+"use client"
 import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Lottie from 'lottie-react';
+import animationData from '@/public/lotties/leaf.json';
+import ImageCarousel from "./ImageCarousel";
 
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        // style={{ backgroundImage: "url('/images/hero/hero-bg.jpg')" }}
         className="relative z-10 overflow-hidden min-h-[90vh] flex items-center"
       >
-        <Image
-          src="/images/hero/branch.gif"
-          alt="about-image"
-          objectFit="cover"
-          width={350}
-          height={350}
-          className="rounded-lg absolute mb-96 z-10"
-        // className="mx-auto max-w-full lg:mr-0"
+        <Lottie
+          animationData={animationData}
+          className="absolute right-0 top-12 max-w-[100vw] sm:max-w-[100vw] md:max-w-[70vw] lg:max-w-[40vw] xl:max-w-[40vw] mb-96"
+          height={400}
+          width={400}
         />
-        <div className="w-full h-full bg-opacity-50 pt-[200px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[110px] 2xl:pb-[200px]" >
+        <div className="w-full h-full bg-opacity-40 pt-[200px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[110px] 2xl:pb-[200px] bg-primary" >
           <div className="container h-full" >
             <div className="-mx-4 flex flex-wrap h-full">
               <div className="flex items-center w-full h-full px-4">
@@ -27,154 +27,24 @@ const Hero = () => {
                   data-wow-delay=".2s"
                 >
                   <Image alt="logo" width={700} height={500} src="/logo.png" />
-                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black outline-double outline-white bg-primary opacity-50 sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
                     MQ International Schooling
                   </h1>
-                  <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:opacity-90 sm:text-lg md:text-xl">
-                    &quot;The MQ International Schooling Method emphasizes modern physical education along with traditional moral education concepts.&quot;                </p>
+                  <p className="mb-12 text-base font-medium !leading-relaxed text-black dark:opacity-90 sm:text-lg md:text-xl">
+                    &quot;The MQ International Schooling Method emphasizes modern physical education along with traditional moral education concepts.&quot;
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="450"
-            height="556"
-            viewBox="0 0 450 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="277"
-              cy="63"
-              r="225"
-              fill="url(#paint0_linear_25:217)"
-            />
-            <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
-              fill="url(#paint1_radial_25:217)"
-            />
-            <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
-              fill="url(#paint2_radial_25:217)"
-            />
-            <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
-              fill="url(#paint3_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
-              stroke="url(#paint4_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="356"
-              cy="290"
-              r="179.5"
-              transform="rotate(-30 356 290)"
-              stroke="url(#paint5_linear_25:217)"
-            />
-            <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
-              r="133.362"
-              transform="rotate(133.319 191.659 302.659)"
-              fill="url(#paint6_linear_25:217)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_25:217"
-                x1="-54.5003"
-                y1="-178"
-                x2="222"
-                y2="288"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#ffff" />
-                <stop offset="1" stopColor="#ffff" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint1_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(17.9997 182) rotate(90) scale(18)"
-              >
-                <stop offset="0.145833" stopColor="#ffff" stopOpacity="0" />
-                <stop offset="1" stopColor="#ffff" stopOpacity="0.08" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:217"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(76.9997 288) rotate(90) scale(34)"
-              >
-                <stop offset="0.145833" stopColor="#ffff" stopOpacity="0" />
-                <stop offset="1" stopColor="#ffff" stopOpacity="0.08" />
-              </radialGradient>
-              <linearGradient
-                id="paint3_linear_25:217"
-                x1="226.775"
-                y1="-66.1548"
-                x2="292.157"
-                y2="351.421"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#ffff" />
-                <stop offset="1" stopColor="#ffff" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint4_linear_25:217"
-                x1="184.521"
-                y1="182.159"
-                x2="184.521"
-                y2="448.882"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#ffff" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint5_linear_25:217"
-                x1="356"
-                y1="110"
-                x2="356"
-                y2="470"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#ffff" />
-                <stop offset="1" stopColor="white" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint6_linear_25:217"
-                x1="118.524"
-                y1="29.2497"
-                x2="166.965"
-                y2="338.63"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#ffff" />
-                <stop offset="1" stopColor="#ffff" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div> */}
+        <div className="absolute bottom-[20vh] flex flex-col justify-center overflow-hidden -z-10">
+          <div className="w-full px-4 md:px-6">
+            <div className="text-center">
+              <ImageCarousel />
+            </div>
+          </div>
+        </div>
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="364"
