@@ -54,62 +54,54 @@ const AboutSectionOne = () => {
                 className="flex items-center wow fadeInUp relative aspect-[25/24] max-w-[500px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-
                 <Image
                   src="/images/hero/butter.gif"
                   alt="about-image"
-                  objectFit="cover"
                   width={70}
                   height={70}
-                  className="rounded-lg absolute mt-96 md:ml-20 lg:ml-0 xl:ml-20 md:z-10 "
-                  // className="mx-auto max-w-full lg:mr-0"
-                  />
+                  className="absolute mt-96 md:ml-20 lg:ml-0 xl:ml-20 md:z-10"
+                />
                 <Image
                   src="/images/gallery/AJI_4208.jpg"
                   alt="about-image"
-                  objectFit="cover"
                   width={350}
                   height={350}
-                  className="rounded-lg absolute mb-32 md:mb-0 md:mt-96 md:ml-40 lg:ml-20 xl:ml-40 md:w-[30vh] lg:w-[30vh] border-white border-spacing-10 border"
-                  // className="mx-auto max-w-full lg:mr-0"
-                  />
+                  className="absolute mb-32 md:mb-0 md:mt-96 md:ml-40 lg:ml-20 xl:ml-40 md:w-[30vh] lg:w-[30vh] border-white border-spacing-10 border"
+                  style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }} // Hexagon
+                />
                 <Image
                   src="/images/gallery/AJI_3868.jpg"
                   alt="about-image"
-                  objectFit="cover"
                   width={350}
                   height={350}
-                  className="rounded-lg absolute md:ml-72 lg:ml-40 xl:ml-72 border-white border-spacing-3 border hidden md:block"
-                  // className="mx-auto max-w-full lg:mr-0"
-                  />
+                  className="absolute md:ml-72 lg:ml-40 xl:ml-72 border-white border-spacing-3 border hidden md:block"
+                  style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }} // Hexagon
+                />
                 <Image
                   src="/images/gallery/AJI_3854.jpg"
                   alt="about-image"
-                  objectFit="cover"
                   width={350}
                   height={350}
-                  className="rounded-lg absolute md:mb-80 lg:mb-96  border-white border-spacing-10 border hidden md:block"
-                  // className="mx-auto max-w-full lg:mr-0"
+                  className="absolute md:mb-80 lg:mb-96 border-white border-spacing-10 border hidden md:block"
+                  style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }} // Hexagon
                 />
                 <div className="flex flex-row mt-56 md:hidden">
-                <Image
-                  src="/images/gallery/AJI_3854.jpg"
-                  alt="about-image"
-                  objectFit="cover"
-                  width={50}
-                  height={50}
-                  className="rounded-lg border-white border-spacing-3 border w-[50vw] "
-                  // className="mx-auto max-w-full lg:mr-0"
-                />
-                <Image
-                  src="/images/gallery/AJI_3868.jpg"
-                  alt="about-image"
-                  objectFit="cover"
-                  width={50}
-                  height={50}
-                  className="rounded-lg  border-white border-spacing-10 border w-[50vw]"
-                  // className="mx-auto max-w-full lg:mr-0"
-                />
+                  <Image
+                    src="/images/gallery/AJI_3854.jpg"
+                    alt="about-image"
+                    width={50}
+                    height={50}
+                    className="border-white border-spacing-3 border w-[50vw]"
+                    style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }} // Hexagon
+                  />
+                  <Image
+                    src="/images/gallery/AJI_3868.jpg"
+                    alt="about-image"
+                    width={50}
+                    height={50}
+                    className="border-white border-spacing-10 border w-[50vw]"
+                    style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }} // Hexagon
+                  />
                 </div>
               </div>
             </div>
